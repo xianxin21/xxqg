@@ -52,9 +52,9 @@ web:
   host: 0.0.0.0
   port: 8080
   # 网页端登录账号
-  account: admin
+  account: admin1
   # 网页端登录密码
-  password: admin
+  password: admin1
   # web端登录普通用户的账号密码，支持多个用户,普通用户只能看到自己的信息
   common_user:
     # 代表账号为user,密码为123的普通用户，可添加多个，继续在下面写就好了
@@ -100,22 +100,22 @@ retry:
 # 设置是否定时执行学习程序，格式为cron格式
 # "9 19 * * *" 每天19点9分执行一次
 # "* 10 * * *” 每天早上十点执行一次
-cron: "0 0 * * *"
+cron: "13 0 * * *"
 
 # 定时任务随机等待时间，单位：分钟
-cron_random_wait: 0
+cron_random_wait: 5
 
 #windows环境自定义浏览器路径，仅支持chromium系列
 edge_path: ""
 
 # 是否推送二维码
-qr_code: false
+qr_code: true
 
 # 启动时等待时间，为了防止代理启动比软件慢而报错，默认不等待，单位秒
 start_wait: 0
 
 # 专项答题可接受的最小分值，因一天重复运行的时候，若专项答题未能答满会继续答新的一套题，会浪费题
-special_min_score: 10
+special_min_score: 5
 
 # 题目搜索的顺序，为true则从2018年最开始搜题，否则从现在最新开始搜题
 reverse_order: false
